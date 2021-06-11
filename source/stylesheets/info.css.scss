@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.coupon{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  &__image{
+    order: 2;
+    img{
+      display: block;
+      width: 268px;
+      margin: 0 auto;
+    }
+  }
+  &__content{
+    order: 1;
+    margin-bottom: 20px;
+    strong{
+      font-size: 16px;
+      font-weight: bold;
+      color: #F00;
+      padding: 0 5px 0 0;
+    }
+  }
+}
+@media all and (min-width: 768px){
+  .coupon{
+    flex-direction: row;
+    margin-bottom: 40px;
+    &__image{
+      order: 1;
+    }
+    &__content{
+      order: 2;
+      padding: 0 0 0 20px;
+      strong{
+        font-size: 32px;
+        padding: 0 8px 0 0;
+      }
+    }
+  }
+}
+@media all and (min-width: 1113px){
+  .coupon{
+    margin-bottom: 40px;
+    &__content{
+      strong{
+        font-size: 28px;
+      }
+    }
+  }
+}

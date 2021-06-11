@@ -1,0 +1,17 @@
+%header.siteHeader
+  .siteHeader__logo
+    = link_to '/index.html' do
+      箱根マイセンアンティーク美術館
+      %span meissen museum
+  .siteHeader__menu
+    %label.menuOpener{for: 'drawer'}
+      %span
+    %nav.drawerMenu
+      %ul
+        %li= link_to 'トップ<span>Top Page</span>', '/index.html'
+        %li= link_to 'マイセンの歴史<span>History of Meissen</span>', 'history.html'
+        %li= link_to 'マイセンQ&A<span>Meissen Q&A</span>', 'qa.html'
+        %li= link_to '美術館のご案内<span>Museum</span>', 'museum.html'
+        %li= link_to 'ご利用案内<span>Information</span>', 'info.html'
+        %li= link_to 'お食事・お土産<span>Cafe&Souvenir</span>', 'cafe.html'
+        %li= link_to 'アクセス<span>Access</span>', 'access.html'

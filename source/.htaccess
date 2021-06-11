@@ -1,0 +1,13 @@
+<Files ~ ".(gif|jpe?g|png|ico|webp)$">
+	Header set Cache-Control "max-age=2592000, public"
+</Files>
+
+RewriteEngine on
+RewriteRule ^inquiry.html$ http://www.hakone-meissen.com/index.html [L,R=301]
+RewriteRule ^sitemap.html$ http://www.hakone-meissen.com/index.html [L,R=301]
+RewriteRule ^link.html$ http://www.hakone-meissen.com/index.html [L,R=301]
+RewriteRule ^ticket.html$ http://www.hakone-meissen.com/index.html [L,R=301]
+RewriteRule ^goura.html$ http://www.hakone-meissen.com/index.html [L,R=301]
+RewriteRule ^group.html$ http://www.hakone-meissen.com/index.html [L,R=301]
+RewriteRule ^gallery.html$ http://www.hakone-meissen.com/museum.html [L,R=301]
+RewriteRule ^building.html$ http://www.hakone-meissen.com/museum.html [L,R=301]

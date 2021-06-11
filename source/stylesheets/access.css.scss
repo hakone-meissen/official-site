@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.methods{
+  &__content{
+    margin-bottom: 20px;
+  }
+}
+
+@media all and (min-width: 768px){
+  .methods{
+    &__content{
+      margin-bottom: 40px;
+    }
+  }
+}
+@media all and (min-width: 1113px){
+  .methods{
+    &__content{
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+.aboutMeissen{
+  &__content{
+    img{
+      display: block;
+      width: 300px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}
+.transition{
+  .element{
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+    &__image{
+      width: 60px;
+      img{
+        display: block;
+        width: 50px;
+        height: 50px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    &__content{
+      flex: 1;
+    }
+  }
+}
+
+@media all and (min-width: 768px){
+  .aboutMeissen{
+    &__content{
+      img{
+        width: 447px;
+      }
+    }
+  }
+  .transition{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .element{
+      display: flex;
+      width: 49%;
+      margin-bottom: 10px;
+      &__image{
+        width: 85px;
+        img{
+          width: 75px;
+        }
+      }
+      &__content{
+      }
+    }
+  }
+}
+@media all and (min-width: 1113px){
+
+}
