@@ -1,36 +1,52 @@
 ---
 title: お食事・お土産｜箱根マイセンアンテイーク美術館
-description: 当館併設のカフェアローチェやお土産店、当館直営店カフェドマイセンのご案内。
+description: 当館併設のカフェやギフトショップ、当館直営店カフェドマイセンのご案内。
 path: cofe.html
 ---
 .billboard--cafe
   .billboard__screen
 .content
   %h1.pageTitle
-    お食事・お土産
+    カフェ・ギフト
     %span
-      Cafe & Souvenir
+      Cafe & Gift
   %section
     %h2.sectionTitle 館内カフェ <span>Cafe Space</span>
     .layoutIntroduction
-      .layoutIntroduction__image
-        = image_tag 'background.png', alt: ''
       .layoutIntroduction__content
         %h3.subTitle マイセンカップで戴く贅沢なひととき
+        .horizontalImages
+          .element
+            = image_tag 'img_pic-cafe0.jpg', alt: 'カフェ外観', width: '500'
+          .element
+            = image_tag 'img_pic-cafe1.jpg', alt: '使用カップ', width: '500'
         %p
-          時を忘れてしまう静寂の中で優雅なカフェタイムを。
+          時を忘れてしまう静寂の中で優雅なカフェタイムを。<br>
           箱根の澄み切った空気と豊かな緑の中で、こだわりの英国輸入紅茶、コーヒーをマイセンのカップでどうぞ。
     %table.basicTable
       %tr
-        %th お飲み物
-        %td アメリカン
-        %td 各800円
+        %th コーヒー
+        %td
+          ブレンド、アメリカン、カフェオレ、エスプレッソ、アイスコーヒー、アイスオレ
+        %td 各900円
       %tr
-        %th スイーツ
-        %td アメリカン
-        %td 各800円
+        %th 紅茶
+        %td ダージリン、アールグレー、アッサム、セイロン、ミルクティー、アイスティー
+        %td 各900円
+      %tr
+        %th ソフトドリンク
+        %td オレンジ、グレープフルーツ
+        %td 各650円
+      %tr
+        %th アルコール
+        %td ビール
+        %td 900円
+      %tr
+        %th ケーキ
+        %td フォンダンショコラ、林檎とさつまいものパイ
+        %td 各600円
   %section
-    %h2.sectionTitle ギフトショップ <span>Souvenir Shop</span>
+    %h2.sectionTitle ギフトショップ <span>Gift Shop</span>
     .layoutIntroduction
       .layoutIntroduction__image
         = image_tag 'background.png', alt: ''
@@ -38,43 +54,35 @@ path: cofe.html
         %h3.subTitle 見出し
         %p
           テキストテキストテキストテキストテキストテキスト
-    .layoutNormal
-      .layoutNormal__image
-        = image_tag 'background.png', alt: ''
-      .layoutNormal__content
-        %h3.subTitle 人気1位
+    .ranking
+      .ranking__content
+        .element
+          .element__image
+            %span 人気1位
+            = image_tag 'background.png', alt: ''
+          .element__content
+            %h3.subTitle マイセンコーヒーカップ
+            %p
+              波の戯れシリーズのなかでも人気の高い白磁のコーヒーカップです。
+              %span 11000円
+        .element
+          .element__image
+            %span 人気2位
+            = image_tag 'background.png', alt: ''
+          .element__content
+            %h3.subTitle 商品名
+            %p
+              商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説
+              %span 3000円
+        .element
+          .element__image
+            %span 人気3位
+            = image_tag 'background.png', alt: ''
+          .element__content
+            %h3.subTitle 商品名
+            %p
+              商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説
+              %span 3000円
+      .ranking__footer
         %p
-          テキスト
-    .layoutNormal
-      .layoutNormal__image
-        = image_tag 'background.png', alt: ''
-      .layoutNormal__content
-        %h3.subTitle 人気1位
-        %p
-          テキスト
-    .layoutNormal
-      .layoutNormal__image
-        = image_tag 'background.png', alt: ''
-      .layoutNormal__content
-        %h3.subTitle 人気1位
-        %p
-          テキスト
-  %section
-    %h2.sectionTitle カフェドマイセン <span>Cafe de meissen</span>
-    .layoutIntroduction
-      .layoutIntroduction__image
-        = image_tag 'background.png', alt: ''
-      .layoutIntroduction__content
-        %h3.subTitle 箱根登山鉄道強羅駅徒歩5分、15種類のピザやカレー、パンケーキのお店
-        %p
-          ペット連れのお客様も大歓迎、
-          ピザのテイクアウトもお受けしております。
-          カフェ利用だけでなく、お昼のランチにも多数ご利用頂いております。
-          強羅公園のお越しの際に是非ご利用下さい。
-          近くにお泊り方、犬の散歩の途中お客様もお立ち寄り下さい。
-    .embedElement
-      :plain
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.259284529143!2d139.04540435081762!3d35.24980476102218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a1f8c27bca3b%3A0x3da358988deea722!2z44Kr44OV44KnIOODiSDjg57jgqTjgrvjg7M!5e0!3m2!1sja!2sjp!4v1623055354798!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    〒250-0408 神奈川県足柄下郡箱根町強羅1300-407
-    TEL：0460-86-1288
-    営業時間：11：00〜19：00（年中無休）
+          この他にも様々なギフト商品がございますので、お帰りの際に是非お立ち寄りください。

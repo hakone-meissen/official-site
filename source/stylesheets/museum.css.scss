@@ -2,8 +2,6 @@
 .showrooms{
   .showroom{
     margin-bottom: 20px;
-    &:nth-child(even){
-    }
     &__image{
       img{
         display: block;
@@ -23,10 +21,21 @@
       img{
         display: block;
         width: 80px;
+        height: 80px;
+        object-fit: cover;
       }
     }
     &__content{
       flex: 1;
+    }
+  }
+}
+.museumOutside{
+  &__image{
+    img{
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
     }
   }
 }
@@ -54,7 +63,15 @@
         width: 180px;
         img{
           width: 160px;
+          height: 160px;
         }
+      }
+    }
+  }
+  .museumOutside{
+    &__image{
+      img{
+        margin-bottom: 40px;
       }
     }
   }
@@ -72,6 +89,14 @@
         .showroom__content{
           order: 1;
         }
+      }
+    }
+  }
+  .museumOutside{
+    &__image{
+      img{
+        max-width: 768px;
+        margin: 0 auto 30px;
       }
     }
   }

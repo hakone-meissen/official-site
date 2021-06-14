@@ -135,7 +135,7 @@ $gothic: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pr
     height: 100vh;
     background: image_url('bg_billboard-top.webp') no-repeat 50% 50% / cover;
   }
-  &--history, &--qa, &--museum, &--museum, &--info, &--cafe, &--access, &--company{
+  &--history, &--qa, &--museum, &--museum, &--info, &--cafe, &--access, &--company, &--inquiry, &--goura{
     height: 200px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -161,6 +161,12 @@ $gothic: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pr
   }
   &--company{
     background-image: image_url('bg_billboard-company.webp') ;
+  }
+  &--inquiry{
+    background-image: image_url('bg_billboard-inquiry.webp') ;
+  }
+  &--goura{
+    background-image: image_url('bg_billboard-goura.webp') ;
   }
   &__screen{
     display: table;
@@ -190,7 +196,7 @@ $gothic: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pr
 }
 @media all and (min-width: 768px){
   .billboard{
-    &--history, &--qa, &--museum, &--museum, &--info, &--cafe, &--access, &--company{
+    &--history, &--qa, &--museum, &--museum, &--info, &--cafe, &--access, &--company, &--inquiry, &--goura{
       height: 400px;
     }
   }

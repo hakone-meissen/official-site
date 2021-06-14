@@ -28,6 +28,9 @@
     <style>
     <%= partial 'partials/fv.css' %>
     </style>
+    <%- if current_page.data.path == 'inquiry.html' %>
+      <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+    <%- end %>
   </head>
   <body id='root'>
   <input type='checkbox' id='drawer'>

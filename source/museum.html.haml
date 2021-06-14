@@ -1,6 +1,6 @@
 ---
 title: 美術館のご案内｜箱根マイセンアンテイーク美術館
-description: 当美術館についてのご案内。
+description: 当美術館の展示ルーム、外観、展示品についてのご案内です。
 path: museum.html
 ---
 .billboard--museum
@@ -64,83 +64,69 @@ path: museum.html
             マイセン磁器製作所設立250周年にあたる1960年、マイセンではいわゆるロココ期の偉大なマイセン磁器作品に匹敵するような、新しいデザインのマイセンを創造しようと「芸術家創造集団」が結成されました。「五大芸術家」と呼ばれるアーティスト達です。その中心人物がハインツ・ヴェルナーであり、その功績を称えられてドイツの人間国宝に選ばれ、現在のマイセン磁器製作所の最高顧問でもあります。
   %section
     %h2.sectionTitle 展示品紹介 <span>Exhibit Introduction</span>
+    .basicTextBlock
+      .basicTextBlock__content
+        %p
+          箱根マイセンアンティーク美術館で展示している一部をご紹介しております。他にも多数のマイセン磁器を展示しておりますので、当美術館へ足を運んでいただけたら幸いです。
     .items
       .item
         .item__image
-          = image_tag 'background.png', alt: '', width: '200'
+          = link_to (image_tag 'img_museum-item0.png', alt: 'アルプレヒト城と薔薇', width: '200'), 'images/img_museum-item0.png', target: '_blank'
         .item__content
-          %h3.subTitle シャンデリア 1830年
-          %p
-            ケンドラールームに飾ってある、
-            マイセン磁器のシャンデリア。
-            愛らしい人物や優雅な花が細かくつくられています。
+          %h3.subTitle アルプレヒト城と薔薇
+          %p 磁板 1760年
       .item
         .item__image
-          = image_tag 'background.png', alt: '踊る男女（クリノリンシリーズ）', width: '200'
+          = link_to (image_tag 'img_museum-item1.png', alt: 'インド像', width: '200'), 'images/img_museum-item1.png', target: '_blank'
         .item__content
-          %h3.subTitle 踊る男女（クリノリンシリーズ）1815年
-          %p
+          %h3.subTitle インド像
+          %p 原作エッサー 2000年作
       .item
         .item__image
-          = image_tag 'background.png', alt: 'パゴタ原型', width: '200'
+          = link_to (image_tag 'img_museum-item2.png', alt: 'スノウボール', width: '200'), 'images/img_museum-item2.png', target: '_blank'
         .item__content
-          %h3.subTitle パゴタ原型 1740年頃
-          %p
-            触ると手や頭が動き、さらに口から舌が出る
-            からくり人形。
-            元々はテーブルウェアで、
-            食事をしながらの懇談会中に
-            会話を盛り上げるために作られたものです。
-
-            作者：エーベライン　　絵付：ヘロルト
+          %h3.subTitle スノウボール
+          %p 原作ケンドラー　1850年
       .item
         .item__image
-          = image_tag 'background.png', alt: '三美神センターピース', width: '200'
+          = link_to (image_tag 'img_museum-item3.png', alt: 'ユニークピース', width: '200'), 'images/img_museum-item3.png', target: '_blank'
         .item__content
-          %h3.subTitle 三美神センターピース 1835年〜1925年
-          %p
-            三人の女神はアグライア（華麗）
-            タリア（花の盛り）
-            オイフロジーネ（明朗）。
-            下は上から見た中央の皿です。
+          %h3.subTitle ユニークピース
+          %p ペーターシュトラング作
       .item
         .item__image
-          = image_tag 'background.png', alt: '林檎狩り', width: '200'
+          = link_to (image_tag 'img_museum-item4.png', alt: '時を持つ子供達', width: '200'), 'images/img_museum-item4.png', target: '_blank'
         .item__content
-          %h3.subTitle 林檎狩り 1880年
-          %p
-      .item
-        .item__image
-          = image_tag 'background.png', alt: 'メッシュプレート', width: '200'
-        .item__content
-          %h3.subTitle メッシュプレート 1835年〜1925年
-          %p
-            プレートの縁に見られる装飾。
-            籠目の四角い部分や連続する楕円を
-            彫刻刀でひとつひとつ彫っていきます。
-      .item
-        .item__image
-          = image_tag 'background.png', alt: 'スノーボール', width: '200'
-        .item__content
-          %h3.subTitle スノーボール 1790年
-          %p
-      .item
-        .item__image
-          = image_tag 'background.png', alt: '仮面舞踏会', width: '200'
-        .item__content
-          %h3.subTitle 仮面舞踏会 1835〜1925年（デルフト焼）
-          %p
-            1Fマルコリーニホールに展示している、館長のコレクションのきっかけとなった人形。ドレスの生地はシルクをイメージしており、当時の様式美が見事に表現された作品です。その豊かな表情、まつげや歯などは、マイセンの影響を如実に物語っております。
-            30年ほど前に英国ロンドンでこの人形と出逢った、この出逢いこそ古マイセン収集の原点なのです。
+          %h3.subTitle 時を持つ子供達
+          %p ポールショイリッヒ作
   %section
     %h2.sectionTitle 建物について <span>About The Building</span>
-    = image_tag 'img_museum-outside.png', width: '100%', alt: '美術館の外観'
-    %p
-      箱根マイセンアンティーク美術館となったこの建物は、吉田茂総理の時代に日本銀行総裁だった一萬田尚登（いちまだひさと）氏が住まわれていた邸宅です。
-    %p
-      元は東京都港区青山に建っていて、道路拡張のため取り壊しが決まっていたのですが、建物の素晴らしさに魅了された旧東海銀行が買い取り、４０年ほど前に保養施設として箱根強羅に移設しました。
-      その後、バブル崩壊や金融トラブルなどの時代を経て、持ち主も変わっていきましたが、運良く財閥の方々の手に渡り、余すことの無い管理と補強が行われ続けました。
-      しかし、現代の生活様式の変化と建物の時代様式の保護とは相反するもの。建物の存続も危ぶまれていった頃、当館と出会い、当館のアンティークを大切にする趣旨に合致するため、マイセン庭園美術館を支えてきてくださったお客様に感謝の意を込めて是非ご紹介したいと、開館を決意しました。
-    %p
-      今後もこの素晴らしい建物を大切にしていき、皆様と喜びを共有出来るよう努力していきたいと思います。
+    .museumOutside
+      .museumOutside__image
+        = image_tag 'img_museum-outside.jpg', width: '640', alt: '美術館の外観'
+      .museumOutside__content
+        %p
+          箱根マイセンアンティーク美術館となったこの建物は、吉田茂総理の時代に日本銀行総裁だった一萬田尚登（いちまだひさと）氏が住まわれていた邸宅です。
+        %p
+          元は東京都港区青山に建っていて、道路拡張のため取り壊しが決まっていたのですが、建物の素晴らしさに魅了された旧東海銀行が買い取り、４０年ほど前に保養施設として箱根強羅に移設しました。
+          その後、バブル崩壊や金融トラブルなどの時代を経て、持ち主も変わっていきましたが、運良く財閥の方々の手に渡り、余すことの無い管理と補強が行われ続けました。
+          しかし、現代の生活様式の変化と建物の時代様式の保護とは相反するもの。建物の存続も危ぶまれていった頃、当館と出会い、当館のアンティークを大切にする趣旨に合致するため、マイセン庭園美術館を支えてきてくださったお客様に感謝の意を込めて是非ご紹介したいと、開館を決意しました。
+        %p
+          今後もこの素晴らしい建物を大切にしていき、皆様と喜びを共有出来るよう努力していきたいと思います。
+      .museumOutside__content
+        %h3.subTitle 大改造！！劇的ビフォーアフター SEASON II
+        .horizontalImages
+          .element
+            = image_tag 'img_museum-ba0.jpg', alt: '大改造！！劇的ビフォーアフター', width: '300'
+          .element
+            = image_tag 'img_museum-ba1.jpg', alt: '大改造！！劇的ビフォーアフター', width: '300'
+        %p
+          仙石原にあったマイセン庭園美術館を強羅のこの建物に移転することは決まりましたが、敷地面積1000坪の広大な庭は2年間、人の手が入らず荒れ放題。手のつけようがありませんでした。
+          そこで、朝日放送「大改造！！劇的ビフォーアフター」に、庭のリフォームをお願いしたのです。
+        %p
+          館長の希望は、元々個人宅だったため目隠しのように高い木が生い茂るこの庭を、美術館にお越しのお客様のみでなく地域の方が気軽に集えるような開放的な庭にしたい、ということ。
+          そんな難題に、「廃材のスタイリスト」の異名を持つ「匠」金井良一氏と、タレントのユージさん＆その仲間が立ち上がってくださいました。
+        %p
+          匠の技とユージさんたちのお陰で、館長の希望以上の素晴らしい庭園が出来上がり、2011年9月4日・11日の2週に渡る放送をご覧になった方々がたくさん来館してくださいました。
+
 

@@ -251,23 +251,19 @@ $gothic: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pr
     padding: 0 5px;
   }
 }
-/*.scrollTop{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 5px 10px;
-  z-index: 10;
-  transition: all 0.25s ease;
-  &:hover{
-    background-color: rgba(0, 0, 0, 1);
+.horizontalImages{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .element{
+    width: 49.5%;
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
-  a{
-    font-size: 12px;
-    color: #FFF;
-    text-decoration: none;
-  }
-}*/
+}
 @media all and (min-width: 768px){
   .siteFooter{
     padding: 60px 40px;
@@ -427,12 +423,6 @@ $gothic: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pr
       padding: 0 10px;
     }
   }
-  /*.scrollTop{
-    padding: 10px 10px 5px 10px;
-    a{
-      font-size: 24px;
-    }
-  }*/
 }
 @media all and (min-width: 1113px){
   .siteFooter{
@@ -577,10 +567,4 @@ $gothic: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pr
       padding: 0 10px 0 5px;
     }
   }
-  /*.scrollTop{
-    padding: 10px 10px 5px 10px;
-    a{
-      font-size: 18px;
-    }
-  }*/
 }

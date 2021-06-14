@@ -1,0 +1,48 @@
+---
+title: お問い合わせ｜箱根マイセンアンテイーク美術館
+description: 箱根マイセンアンティーク美術館へのお問い合わせはこちらのフォームからお願いいたします。
+path: inquiry.html
+---
+.billboard--inquiry
+  .billboard__screen
+.content
+  %h1.pageTitle
+    お問い合わせ
+    %span
+      Contact Us
+  %section
+    %h2.sectionTitle コンタクトフォーム <span>Contact Form</span>
+    :plain
+      <form class="formrun" action="https://form.run/api/v1/r/rvupk18oqcogorojc4lw5mcm" method="post">
+        <div class='formGroup'>
+          <label>お名前</label>
+          <input name="_name" type="text" data-formrun-type="email" data-formrun-required>
+          <div data-formrun-show-if-error="_name">お名前を正しく入力してください</div>
+        </div>
+
+        <div class='formGroup'>
+          <label>メールアドレス</label>
+          <input name="_email" type="text" data-formrun-type="email" data-formrun-required>
+          <div data-formrun-show-if-error="_email">メールアドレスを正しく入力してください</div>
+        </div>
+
+        <div class='formGroup'>
+          <label>お問い合わせ</label>
+          <textarea name="_contact" data-formrun-required></textarea>
+          <div data-formrun-show-if-error="_contact">お問い合わせ入力してください</div>
+        </div>
+
+        <div class='checkGroup'>
+          <label>個人情報利用同意</label>
+          <input type="checkbox" name="個人情報利用同意" data-formrun-required>
+          <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
+        </div>
+
+        <div class="_formrun_gotcha">
+          <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+          <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+          <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+        </div>
+
+        <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+      </form>

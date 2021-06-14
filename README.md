@@ -3,6 +3,8 @@ hakone meissen museum official site
 
 ## production environment
 - Mac OS Catalina@10.15.7
+  - rbenv@1.1.2
+    - ruby@2.6.5p114
   - Middleman@4.3.6
     - middleman-minify-html@3.4.1
     - builder@3.2.4
