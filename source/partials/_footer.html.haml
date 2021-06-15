@@ -5,7 +5,7 @@
     %li= link_to 'Q＆A', 'qa.html'
     %li= link_to '美術館のご案内', 'museum.html'
     %li= link_to 'ご利用案内', 'info.html'
-    %li= link_to 'カフェ・ギフト', 'cafe.html'
+    %li= link_to '館内施設', 'cafe.html'
     %li= link_to 'アクセス', 'access.html'
     %li= link_to 'お食事', 'goura.html'
     %li= link_to '会社概要', 'company.html'
@@ -20,14 +20,15 @@
     %li
       = link_to 'https://www.youtube.com/playlist?list=PLsNn3Q91qd87IjD4UWNie4yfQJejDTMlq', target: '_blank', rel: 'noopener', title: 'youtube' do
         %span.yt
-  .address
+  .address{itemscope: '', itemtype: 'https://schema.org/Museum'}
+    %b{itemprop: 'name'} 箱根マイセンアンテイーク美術館
     %address
-      〒250-0408　神奈川県足柄下郡箱根町強羅1320-653
+      〒250-0408
+      %span{itemprop: 'address'} 神奈川県足柄下郡箱根町強羅1320-653
     TEL：
-    = link_to '0460-83-8855', 'tel:0460838855'
-    FAX：0460-83-8856
-
+    = link_to 'tel:0460838855' do
+      %span{itemprop: 'telephone'} 0460-83-8855
+    FAX：
+    %span{itemprop: 'faxNumber'} 0460-83-8856
   .copy
     Copyright &copy; ALLDOORS All Rights Reserved.
--#.scrollTop
-  = link_to 'PAGE TOP', '#root'

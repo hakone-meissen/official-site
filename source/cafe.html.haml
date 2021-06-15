@@ -1,25 +1,25 @@
 ---
-title: お食事・お土産｜箱根マイセンアンテイーク美術館
-description: 当館併設のカフェやギフトショップ、当館直営店カフェドマイセンのご案内。
+title: 館内施設｜箱根マイセンアンテイーク美術館 - 箱根観光スポット
+description: 箱根マイセンアンテイーク美術館併設のカフェやギフトショップのご案内です。
 path: cofe.html
 ---
 .billboard--cafe
   .billboard__screen
 .content
   %h1.pageTitle
-    カフェ・ギフト
+    館内施設
     %span
-      Cafe & Gift
+      Facilities
   %section
-    %h2.sectionTitle 館内カフェ <span>Cafe Space</span>
+    %h2.sectionTitle カフェ <span>Cafe Space</span>
     .layoutIntroduction
       .layoutIntroduction__content
-        %h3.subTitle マイセンカップで戴く贅沢なひととき
         .horizontalImages
           .element
-            = image_tag 'img_pic-cafe0.jpg', alt: 'カフェ外観', width: '500'
+            = image_tag 'img_pic-cafe0.jpg', alt: 'カフェ内観', width: '500'
           .element
-            = image_tag 'img_pic-cafe1.jpg', alt: '使用カップ', width: '500'
+            = image_tag 'img_pic-cafe1.jpg', alt: '提供例', width: '500'
+        %h3.subTitle マイセンカップで戴く贅沢なひととき
         %p
           時を忘れてしまう静寂の中で優雅なカフェタイムを。<br>
           箱根の澄み切った空気と豊かな緑の中で、こだわりの英国輸入紅茶、コーヒーをマイセンのカップでどうぞ。
@@ -49,40 +49,45 @@ path: cofe.html
     %h2.sectionTitle ギフトショップ <span>Gift Shop</span>
     .layoutIntroduction
       .layoutIntroduction__image
-        = image_tag 'background.png', alt: ''
+        .horizontalImages
+          .element
+            = image_tag 'img_cafe-giftshop0.jpg', alt: 'ギフトショップ内観', width: '500'
+          .element
+            = image_tag 'img_cafe-giftshop1.jpg', alt: 'ギフトショップ外観', width: '500'
       .layoutIntroduction__content
-        %h3.subTitle 見出し
+        %h3.subTitle あなたの旅の思い出やマイセンコレクションに
         %p
-          テキストテキストテキストテキストテキストテキスト
+          マイセン磁器をはじめ様々なアイテムを取り揃えております。
+          旅の思い出やコレクションにいかがでしょうか？
     .ranking
       .ranking__content
         .element
           .element__image
             %span 人気1位
-            = image_tag 'background.png', alt: ''
+            = link_to (image_tag 'img_cafe-gift0.jpg', alt: 'マイセンコーヒーカップ'), 'images/img_cafe-gift0.jpg', data:{lity: ''}
           .element__content
             %h3.subTitle マイセンコーヒーカップ
             %p
-              波の戯れシリーズのなかでも人気の高い白磁のコーヒーカップです。
+              波の戯れシリーズのなかでも人気の高い白磁のコーヒーカップです。。お使いものに大変喜ばれるお品です。
               %span 11000円
         .element
           .element__image
             %span 人気2位
-            = image_tag 'background.png', alt: ''
+            = link_to (image_tag 'img_cafe-gift1.jpg', alt: 'マグカップ'), 'images/img_cafe-gift1.jpg', data:{lity: ''}
           .element__content
-            %h3.subTitle 商品名
+            %h3.subTitle マグカップ
             %p
-              商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説
-              %span 3000円
+              様々な色柄形が選べて楽しいイギリス製のマグカップです
+              %span 2300円〜
         .element
           .element__image
             %span 人気3位
-            = image_tag 'background.png', alt: ''
+            = link_to (image_tag 'img_cafe-gift2.jpg', alt: '美術館オリジナル一筆箋'), 'images/img_cafe-gift2.jpg', data:{lity: ''}
           .element__content
-            %h3.subTitle 商品名
+            %h3.subTitle 美術館オリジナル一筆箋
             %p
-              商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説商品解説
-              %span 3000円
+              マイセンミュージアムオリジナルの一筆箋ですマイセン手書き風のフルーツ柄とお花柄を散りばめた素敵な一筆箋です。
+              %span 880円
       .ranking__footer
         %p
           この他にも様々なギフト商品がございますので、お帰りの際に是非お立ち寄りください。

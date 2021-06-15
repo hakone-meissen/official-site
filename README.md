@@ -15,3 +15,5 @@ hakone meissen museum official site
     - style-loader@1.2.1
     - webpackz@4.43.0
     - webpack-cli@3.3.11
+    - jquery@3.6.0
+    - lity@2.4.1

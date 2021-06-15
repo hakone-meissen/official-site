@@ -3,9 +3,10 @@
 </Files>
 
 RewriteEngine on
-RewriteRule ^sitemap.html$ http://www.hakone-meissen.com/index.html [L,R=301]
-RewriteRule ^link.html$ http://www.hakone-meissen.com/index.html [L,R=301]
-RewriteRule ^ticket.html$ http://www.hakone-meissen.com/index.html [L,R=301]
-RewriteRule ^group.html$ http://www.hakone-meissen.com/index.html [L,R=301]
-RewriteRule ^gallery.html$ http://www.hakone-meissen.com/museum.html [L,R=301]
-RewriteRule ^building.html$ http://www.hakone-meissen.com/museum.html [L,R=301]
+RewriteRule ^sitemap.html$ https://www.hakone-meissen.com/index.html [L,R=301]
+RewriteRule ^english.html$ https://www.hakone-meissen.com/index.html [L,R=301]
+RewriteRule ^link.html$ https://www.hakone-meissen.com/index.html [L,R=301]
+RewriteRule ^ticket.html$ https://www.hakone-meissen.com/index.html [L,R=301]
+RewriteRule ^group.html$ https://www.hakone-meissen.com/index.html [L,R=301]
+RewriteRule ^gallery.html$ https://www.hakone-meissen.com/museum.html [L,R=301]
+RewriteRule ^building.html$ https://www.hakone-meissen.com/museum.html [L,R=301]

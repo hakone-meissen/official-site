@@ -6,6 +6,11 @@ import MUSEUM from "../stylesheets/museum.css.scss";
 import CAFE from "../stylesheets/cafe.css.scss";
 import INQUIRY from "../stylesheets/inquiry.css.scss";
 import GOURA from "../stylesheets/goura.css.scss";
+import LITY from "../stylesheets/lity.css";
+
+import jquery from 'jquery'; 
+window.$ = jquery
+import 'lity';
 
 window.addEventListener('load', function(){
   const loadingScreen = document.getElementById('js-loadingScreen');

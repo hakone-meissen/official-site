@@ -1,5 +1,5 @@
 ---
-title: カフェ ド マイセン｜箱根マイセンアンテイーク美術館
+title: カフェ ド マイセン｜箱根マイセンアンテイーク美術館 - 箱根観光スポット
 description: 強羅駅から徒歩5分のペットOKなおしゃれなカフェ「Cafe de Meissen」。ピザやパンケーキなど豊富なメニューを取り揃えております。テイクアウトもOK!!
 path: museum.html
 ---
@@ -35,7 +35,7 @@ path: museum.html
         .element
           .element__image
             %span 人気1位
-            = image_tag 'img_goura-ranking0.jpg', alt: 'プロシュート＆マスカルポーネ', width: '333'
+            = link_to (image_tag 'img_goura-ranking0.jpg', alt: 'プロシュート＆マスカルポーネ', width: '333'), 'images/img_goura-ranking0.jpg', data:{lity: ''}
           .element__content
             %h3.subTitle プロシュート＆マスカルポーネ
             %p
@@ -44,7 +44,7 @@ path: museum.html
         .element
           .element__image
             %span 人気2位
-            = image_tag 'img_goura-ranking1.jpg', alt: 'マルゲリータ', width: '333'
+            = link_to (image_tag 'img_goura-ranking1.jpg', alt: 'マルゲリータ', width: '333'), 'images/img_goura-ranking1.jpg', data:{lity: ''}
           .element__content
             %h3.subTitle マルゲリータ
             %p
@@ -53,7 +53,7 @@ path: museum.html
         .element
           .element__image
             %span 人気3位
-            = image_tag 'img_goura-ranking2.jpg', alt: 'ビーフシチュー', width: '333'
+            = link_to (image_tag 'img_goura-ranking2.jpg', alt: 'ビーフシチュー', width: '333'), 'images/img_goura-ranking2.jpg', data:{lity: ''}
           .element__content
             %h3.subTitle ビーフシチュー
             %p
@@ -64,10 +64,26 @@ path: museum.html
     .embedElement
       :plain
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.259284529143!2d139.04540435081762!3d35.24980476102218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a1f8c27bca3b%3A0x3da358988deea722!2z44Kr44OV44KnIOODiSDjg57jgqTjgrvjg7M!5e0!3m2!1sja!2sjp!4v1623055354798!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    .basicTextBlock
-      .basicTextBlock__content
-        %p
-          〒250-0408 神奈川県足柄下郡箱根町強羅1300-407<br>
-          TEL：<a href='tel:0460861288'>0460-86-1288</a><br>
-          営業時間：11：00〜19：00（年中無休）
-
+    .shopInfo{itemscope: '', itemtype: 'https://schema.org/LocalBusiness'}
+      .shopInfo__image
+        = image_tag 'img_pic-cafedemissen.jpg', alt: 'カフェドマイセン', itemprop: 'image'
+      .shopInfo__summary
+        %h4
+          %span{itemprop: 'name'} Cafe de Meissen
+        %dl
+          %dt 住所:
+          %dd
+            %span{itemprop: 'address'} 〒250-0408 神奈川県足柄下郡箱根町強羅1300-407
+        %dl
+          %dt TEL:
+          %dd
+            = link_to '' do
+              %span{itemprop: 'telephone'} 0460-86-1288
+        %dl
+          %dt 営業時間:
+          %dd
+            %span{itemprop: 'openingHours'} 11：00〜19：00（年中無休）
+        %dl
+          %dt 平均予算:
+          %dd
+            %span{itemprop: 'priceRange'} 1500円〜2000円
