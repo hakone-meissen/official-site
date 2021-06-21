@@ -21,9 +21,9 @@ path: museum.html
         %h3.subTitle 箱根登山鉄道強羅駅徒歩5分、15種類のピザやカレー、パンケーキのお店
         .horizontalImages
           .element
-            = image_tag 'img_pic-cafedemissen0.jpg', alt: 'カフェドマイセン', width: '518'
+            = image_tag 'img_pic-cafedemissen0.webp', alt: 'カフェドマイセン', width: '500', height: '375'
           .element
-            = image_tag 'img_pic-cafedemissen1.jpg', alt: 'cafe de meissen', width: '518'
+            = image_tag 'img_pic-cafedemissen1.webp', alt: 'cafe de meissen', width: '518', height: '375'
         %p
           ペット連れのお客様も大歓迎、
           ピザのテイクアウトもお受けしております。
@@ -35,7 +35,7 @@ path: museum.html
         .element
           .element__image
             %span 人気1位
-            = link_to (image_tag 'img_goura-ranking0.jpg', alt: 'プロシュート＆マスカルポーネ', width: '333'), 'images/img_goura-ranking0.jpg', data:{lity: ''}
+            = link_to (image_tag 'img_goura-ranking0.webp', alt: 'プロシュート＆マスカルポーネ', width: '333', height: '250'), 'images/img_goura-ranking0.webp', data:{lity: ''}
           .element__content
             %h3.subTitle プロシュート＆マスカルポーネ
             %p
@@ -44,7 +44,7 @@ path: museum.html
         .element
           .element__image
             %span 人気2位
-            = link_to (image_tag 'img_goura-ranking1.jpg', alt: 'マルゲリータ', width: '333'), 'images/img_goura-ranking1.jpg', data:{lity: ''}
+            = link_to (image_tag 'img_goura-ranking1.webp', alt: 'マルゲリータ', width: '333', height: '250'), 'images/img_goura-ranking1.webp', data:{lity: ''}
           .element__content
             %h3.subTitle マルゲリータ
             %p
@@ -53,7 +53,7 @@ path: museum.html
         .element
           .element__image
             %span 人気3位
-            = link_to (image_tag 'img_goura-ranking2.jpg', alt: 'ビーフシチュー', width: '333'), 'images/img_goura-ranking2.jpg', data:{lity: ''}
+            = link_to (image_tag 'img_goura-ranking2.webp', alt: 'ビーフシチュー', width: '333', height: '250'), 'images/img_goura-ranking2.webp', data:{lity: ''}
           .element__content
             %h3.subTitle ビーフシチュー
             %p
@@ -66,7 +66,7 @@ path: museum.html
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.259284529143!2d139.04540435081762!3d35.24980476102218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a1f8c27bca3b%3A0x3da358988deea722!2z44Kr44OV44KnIOODiSDjg57jgqTjgrvjg7M!5e0!3m2!1sja!2sjp!4v1623055354798!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     .shopInfo{itemscope: '', itemtype: 'https://schema.org/LocalBusiness'}
       .shopInfo__image
-        = image_tag 'img_pic-cafedemissen.jpg', alt: 'カフェドマイセン', itemprop: 'image'
+        = image_tag 'img_pic-cafedemissen.webp', alt: 'カフェドマイセン', itemprop: 'image', width: '259', height: '173'
       .shopInfo__summary
         %h4
           %span{itemprop: 'name'} Cafe de Meissen
@@ -77,8 +77,7 @@ path: museum.html
         %dl
           %dt TEL:
           %dd
-            = link_to '' do
-              %span{itemprop: 'telephone'} 0460-86-1288
+            %span{itemprop: 'telephone'} 0460-86-1288
         %dl
           %dt 営業時間:
           %dd

@@ -1,4 +1,15 @@
 @charset "utf-8";
+.aboutShowroom{
+  margin-bottom: 30px;
+  &__image{
+    img{
+      display: block;
+      width: 200px;
+      height: auto;
+      margin: 0 auto 10px;
+    }
+  }
+}
 .showrooms{
   .showroom{
     margin-bottom: 20px;
@@ -12,24 +23,48 @@
     }
   }
 }
-.items{
-  .item{
-    display: flex;
-    margin-bottom: 20px;
-    &__image{
-      width: 90px;
-      img{
-        display: block;
-        width: 80px;
-        height: 80px;
-        object-fit: cover;
+.exhibitImages{
+  &__header{
+    p{
+      em{
+        font-style: normal;
+        &::before{
+          content: 'タップ';
+        }
       }
     }
-    &__content{
-      flex: 1;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+    .image{
+      position: relative;
+      margin-bottom: 10px;
+      img{
+        display: block;
+        width: 145px;
+        height: 145px;
+        object-fit: cover;
+      }
+      span{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 10px;
+        color: #FFF;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
     }
   }
 }
+
 .museumOutside{
   &__image{
     img{
@@ -40,6 +75,24 @@
   }
 }
 @media all and (min-width: 768px){
+  .aboutShowroom{
+    display: flex;
+    margin-bottom: 60px;
+    &__image{
+      width: 210px;
+      order: 1;
+      img{
+        display: block;
+        width: 200px;
+        height: auto;
+        margin: 0;
+      }
+    }
+    &__content{
+      flex: 1;
+      order: 2;
+    }
+  }
   .showrooms{
     .showroom{
       display: flex;
@@ -56,14 +109,22 @@
       }
     }
   }
-  .items{
-    .item{
-      margin-bottom: 40px;
-      &__image{
-        width: 180px;
+  .exhibitImages{
+    &__content{
+      justify-content: start;
+      width: 728px;
+      .image{
+        margin: 0 19px 19px 0;
+        &:nth-child(3n){
+          margin-right: 0;
+        }
         img{
-          width: 160px;
-          height: 160px;
+          width: 230px;
+          height: 230px;
+        }
+        span{
+          font-size: 20px;
+          padding: 10px;
         }
       }
     }
@@ -88,6 +149,38 @@
         }
         .showroom__content{
           order: 1;
+        }
+      }
+    }
+  }
+  .exhibitImages{
+    &__header{
+      p{
+        em{
+          &::before{
+            content: 'クリック';
+          }
+        }
+      }
+    }
+    &__content{
+      justify-content: start;
+      width: 768px;
+      .image{
+        margin: 0 9px 9px 0;
+        &:nth-child(3n){
+          margin-right: 9px;
+        }
+        &:nth-child(4n){
+          margin-right: 0;
+        }
+        img{
+          width: 185px;
+          height: 185px;
+        }
+        span{
+          font-size: 14px;
+          padding: 10px;
         }
       }
     }

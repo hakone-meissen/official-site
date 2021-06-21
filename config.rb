@@ -53,6 +53,5 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :minify_html
-  #activate :search_engine_sitemap
   activate :gzip
 end

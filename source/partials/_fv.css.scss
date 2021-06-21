@@ -136,37 +136,41 @@ $gothic: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pr
     background: image_url('bg_billboard-top.webp') no-repeat 50% 50% / cover;
   }
   &--history, &--qa, &--museum, &--museum, &--info, &--cafe, &--access, &--company, &--inquiry, &--goura{
-    height: 300px;
+    height: 250px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+    margin-top: 70px;
   }
   &--history{
     background-image: image_url('bg_billboard-history.webp');
   }
   &--qa{
     background-image: image_url('bg_billboard-qa.webp');
+    background-position: top center;
   }
   &--museum{
-    background-image: image_url('bg_billboard-museum.webp') ;
+    background-image: image_url('bg_billboard-museum.webp');
   }
   &--info{
-    background-image: image_url('bg_billboard-info.webp') ;
+    background-image: image_url('bg_billboard-info.webp');
   }
   &--cafe{
-    background-image: image_url('bg_billboard-cafe.webp') ;
+    background-image: image_url('bg_billboard-cafe.webp');
+    background-position: top center;
   }
   &--access{
-    background-image: image_url('bg_billboard-access.webp') ;
+    background-image: image_url('bg_billboard-access.webp');
+    background-position: top center;
   }
   &--company{
-    background-image: image_url('bg_billboard-company.webp') ;
+    background-image: image_url('bg_billboard-company.webp');
   }
   &--inquiry{
-    background-image: image_url('bg_billboard-inquiry.webp') ;
+    background-image: image_url('bg_billboard-inquiry.webp');
   }
   &--goura{
-    background-image: image_url('bg_billboard-goura.webp') ;
+    background-image: image_url('bg_billboard-goura.webp');
   }
   &__screen{
     display: table;
